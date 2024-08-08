@@ -140,6 +140,10 @@
             <div class="banner__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
               <p>{{ block.settings.text }}</p>
             </div>
+          {%- when 'animation' -%}
+            <script src="{{ 'image-banner-animation.js' | asset_url }}" defer="defer"></script>
+            <div id="banner__animation__title" data-animation-path="{{ block.settings.title_animation_url }}" {{ block.shopify_attributes }}>
+            </div>
           {%- when 'buttons' -%}
             <div
               class="banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}"
@@ -383,6 +387,18 @@
     }
   ],
   "blocks": [
+    {
+      "type": "animation",
+      "name": "Title animation",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title_animation_url",
+          "label": "Title Animation Url"
+         }
+      ]
+    },
     {
       "type": "heading",
       "name": "t:sections.image-banner.blocks.heading.name",
