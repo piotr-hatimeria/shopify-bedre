@@ -2626,6 +2626,43 @@
         "name": "Multicolumn"
       }
     },
+
+
+
+
+    "content_card": {
+      "name": "Content card",
+      "settings": {
+        "label": {
+          "label": "Label"
+        },
+        "header": {
+          "label": "Header"
+        }
+      },
+      "blocks": {
+        "column": {
+          "name": "Column",
+          "settings": {
+            "image": {
+              "label": "Image"
+            },
+            "title": {
+              "label": "Heading"
+            },
+            "link": {
+              "label": "Link"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Content Card"
+      }
+    },
+
+
+
     "newsletter": {
       "name": "Email signup",
       "settings": {

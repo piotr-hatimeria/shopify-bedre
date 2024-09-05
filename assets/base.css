@@ -3609,7 +3609,7 @@ details-disclosure > details {
 
 @font-face {
   font-family: "Circular-Regular";
-  src: url("CircularXXWeb-Regular.woff") format("woff");
+  src: url("CircularXXWeb-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
