@@ -28,7 +28,7 @@
 
 @media screen and (min-width: 1024px) {
     .content-card__list__item {
-        flex-basis: calc(min((100vw - 7.5rem) / 3, 26.375rem));
+        flex-basis: calc(min((100vw - 7.5rem) / 3, 31.375rem));
     }
 }
 
