@@ -593,3 +593,63 @@
     clip-path: polygon(var(--shape--blob-5));
   }
 }
+
+.card--border {
+    border: 2px solid rgb(var(--color-foreground));
+    border-radius: 2.5rem;
+    overflow: hidden;
+
+    &.card--border__discount {
+      border-color: rgb(var(--color-button));
+    }
+
+    .card__content {
+      padding: 2rem;
+    }
+
+    .card__information {
+      padding: 0;
+    }
+}
+
+.card__information_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  .price {
+    text-align: right;
+
+    .price__sale {
+      .price-item--regular {
+        margin: 0;
+      }
+
+      .price-item--sale {
+        font-size: 1.75rem;
+        font-weight: bold;
+        color: rgb(var(--color-button));
+      }
+    }
+
+    .price__regular {
+      font-size: 1.75rem;
+      font-weight: bold;
+      color: rgb(var(--color-button));
+    }
+  }
+
+  .card__information_inner__size {
+    color: rgb(var(--color-gray));
+    display: block;
+    padding-bottom: 0.5rem;
+    font-size: calc(var(--font-body-scale) * 1.2rem);
+  }
+
+  .card__information_inner__model {
+    color: rgb(var(--color-gray));
+    display: block;
+    padding-top: 0.5rem;
+    font-size: calc(var(--font-body-scale) * 1.2rem);
+  }
+}

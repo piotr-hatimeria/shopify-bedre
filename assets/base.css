@@ -2934,6 +2934,18 @@ details-disclosure > details {
   word-break: break-word;
 }
 
+.badge-discount {
+  position: absolute;
+  right: 0;
+  top: 2rem;
+  padding: 1rem 1.5rem;
+  font-weight: bold;
+  background: rgb(var(--color-button));
+  color: rgb(var(--color-button-text));
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+
 .gradient {
   background: rgb(var(--color-background));
   background: var(--gradient-background);
